@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/White"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="2dp"
+    android:id="@+id/xCardViewe">
+
+    <RelativeLayout
+        android:id="@+id/xCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/xnamaKaryawan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="casual"
+            android:textSize="22dp"
+            android:text=""
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/xemailKaryawan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xnamaKaryawan"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="casual"
+            android:text=""
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/xnohp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xemailKaryawan"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/xalamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xnohp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text=""
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/xupdateBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/xdelBtn"
+            android:background="@color/colorAccent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_edit" />
+
+        <ImageButton
+            android:id="@+id/xdelBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorAccent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete"
+            android:scaleType="fitXY"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
